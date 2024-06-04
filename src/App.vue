@@ -1,16 +1,19 @@
 <script>
-  import CitiesList from './components/CitiesList.vue'
-  import HelloWorld from './components/HelloWorld.vue'
+  import Header from './components/Header.vue'
+  import Main from './components/Main.vue'
+  import Footer from './components/Footer.vue'
 
   export default {
     components: {
-      CitiesList,
-      HelloWorld
+      Header,
+      Main,
+      Footer,
     }
   }
 </script>
 
 <template>
-  <HelloWorld msg="Hello World!" />
-  <CitiesList />
+  <Header />
+  <Main />
+  <Footer />
 </template>

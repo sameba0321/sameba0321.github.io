@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "snyk": "^1.1267.0",
-    "vue": "^3.4.3"
+    "vue": "^3.4.3",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.2",
