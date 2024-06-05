@@ -4,10 +4,10 @@
       <div class="todo-item" v-for="(todo, index) in todos" :key="index">
         <h3 @click="goToDetailPage(todo)">{{ todo.title }}</h3>
         <p @click="goToDetailPage(todo)">{{ todo.description }}</p>
-        <span @click.stop="deleteTodo(index)">❌</span> <!-- Stop event propagation -->
+        <span @click.stop="deleteTodo(index)">❌</span> 
       </div>
     </div>
-    <!-- Style the button as a round button with a horizontal cross icon -->
+   
     <button class="add-todo-button" @click="addTodo">
       <span class="horizontal-cross">&#10006;</span>
     </button>

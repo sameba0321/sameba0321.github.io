@@ -11,6 +11,12 @@ dependencies:
   vue:
     specifier: ^3.4.3
     version: 3.4.3
+  vue-cookies:
+    specifier: ^1.8.4
+    version: 1.8.4
+  vue-property-decorator:
+    specifier: ^9.1.2
+    version: 9.1.2(vue-class-component@7.2.6)(vue@3.4.3)
   vue-router:
     specifier: ^4.3.2
     version: 4.3.2(vue@3.4.3)
@@ -803,6 +809,28 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /vue-class-component@7.2.6(vue@3.4.3):
+    resolution: {integrity: sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==}
+    peerDependencies:
+      vue: ^2.0.0
+    dependencies:
+      vue: 3.4.3
+    dev: false
+
+  /vue-cookies@1.8.4:
+    resolution: {integrity: sha512-9zjvACKE4W0kEb8OQtXzpizKhf6zfFOG/Z1TEUjSJn4Z4rintuAHo8y/FpCUhTWHMmPe8E+Fko+/tiXVM+5jOw==}
+    dev: false
+
+  /vue-property-decorator@9.1.2(vue-class-component@7.2.6)(vue@3.4.3):
+    resolution: {integrity: sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==}
+    peerDependencies:
+      vue: '*'
+      vue-class-component: '*'
+    dependencies:
+      vue: 3.4.3
+      vue-class-component: 7.2.6(vue@3.4.3)
+    dev: false
 
   /vue-router@4.3.2(vue@3.4.3):
     resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
