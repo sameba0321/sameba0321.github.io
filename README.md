@@ -1,2 +1,2 @@
-# MovieFinder
-A movie finder website that I made with Vue.
+# Todoit
+A todo website that saves your tasks i made with vue
