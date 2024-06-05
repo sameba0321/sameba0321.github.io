@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
       <p>&copy; 2024. All rights reserved.</p>
-      <p>Designed by Sam with ❤️</p>
+      <!--<p>Designed by Sam with ❤️</p> -->
     </footer>
   </template>
   
