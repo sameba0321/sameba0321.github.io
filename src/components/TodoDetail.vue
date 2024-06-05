@@ -160,14 +160,16 @@ export default defineComponent({
   cursor: pointer;
   margin-left: 5px;
 }
+
 .task-wrapper {
   display: flex;
   align-items: center;
 }
+
 .create-task-button {
   margin-top: 5px;
-  padding: 5px 10px;
-  background-color: #007bff;
+  padding: 8px 16px;
+  background-color: slategray;
   color: white;
   border: none;
   cursor: pointer;
@@ -175,5 +177,16 @@ export default defineComponent({
 
 .create-task-button:hover {
   background-color: #0056b3;
+}
+
+.task-list input[type="text"] {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+
+.task-list input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
 }
 </style>

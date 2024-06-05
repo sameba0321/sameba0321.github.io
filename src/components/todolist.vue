@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="todo-container">
     <div class="todo-list">
       <div class="todo-item" v-for="(todo, index) in todos" :key="index">
         <h3 @click="goToDetailPage(todo)">{{ todo.title }}</h3>
@@ -9,7 +9,7 @@
     </div>
    
     <button class="add-todo-button" @click="addTodo">
-      <span class="horizontal-cross">&#10006;</span>
+      <span class="horizontal-cross">+</span>
     </button>
   </div>
 </template>
@@ -57,19 +57,29 @@ export default {
 </script>
 
 <style>
+.todo-container {
+  display: flex;
+  gap: 10px;
+}
+
 .todo-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 10px;
 }
 
 .todo-item {
-  position: relative; /* Relative position for the delete button */
   width: 200px;
+  height: 150px;
   padding: 10px;
-  margin: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
+  position: relative;
+}
+
+.todo-item h3,
+.todo-item p {
+  margin: 0;
 }
 
 .todo-item span {
@@ -81,21 +91,23 @@ export default {
 
 .add-todo-button {
   border: none;
-  border-radius: 50%; /* Round button */
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #007bff;
+  background-color: slategrey; /* Change to slate grey */
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
 }
 
 .add-todo-button span.horizontal-cross {
   font-size: 20px;
   line-height: 40px;
-  transform: rotate(90deg); /* Rotate the cross icon horizontally */
 }
 
 .add-todo-button:hover {
-  background-color: #0056b3;
+  background-color: #7c7c7c; /* Darken the color on hover */
 }
 </style>
