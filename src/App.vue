@@ -1,19 +1,35 @@
-<script>
-  import Header from './components/Header.vue'
-  import Main from './components/Main.vue'
-  import Footer from './components/Footer.vue'
+<template>
+  <div class="app-container">
+    <Header />
+    <div class="main-content">
+      <router-view></router-view>
+    </div>
+    <Footer />
+  </div>
+</template>
 
-  export default {
-    components: {
-      Header,
-      Main,
-      Footer,
-    }
+<script>
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+
+export default {
+  components: {
+    Header,
+    Footer
   }
+};
 </script>
 
-<template>
-  <Header />
-  <Main />
-  <Footer />
-</template>
+<style>
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+</style>

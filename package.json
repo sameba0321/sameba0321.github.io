@@ -2,6 +2,7 @@
   "dependencies": {
     "snyk": "^1.1267.0",
     "vue": "^3.4.3",
+    "vue-cookies": "^1.8.4",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {

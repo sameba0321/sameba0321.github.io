@@ -10,8 +10,8 @@
       </div>
       <nav class="navigation">
         <ul class="nav-list">
-          <li><router-link to="/">Home</router-link></li> <!-- Link to the home page -->
-          <li><router-link to="/todolist">Get started</router-link></li> <!-- Link to the todo list page -->
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/todolist">Get started</router-link></li>
           <li><router-link to="#">Contact</router-link></li>
         </ul>
       </nav>
