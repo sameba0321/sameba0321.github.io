@@ -7,7 +7,7 @@
         <span @click.stop="deleteTodo(index)">❌</span> 
       </div>
     </div>
-   
+  
     <button class="add-todo-button" @click="addTodo">
       <span class="horizontal-cross">+</span>
     </button>
